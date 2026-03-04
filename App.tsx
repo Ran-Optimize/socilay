@@ -450,7 +450,7 @@ const MidPageCTA: React.FC = () => {
           <div className="flex flex-col items-center gap-6">
             <a 
               href="#lead-form" 
-              className="brand-gradient text-white px-16 py-7 rounded-3xl font-black text-2xl shadow-2xl shadow-brand/40 hover:scale-105 active:scale-95 transition-all inline-flex items-center gap-4 group"
+              className="brand-gradient text-white w-full md:w-auto px-8 md:px-16 py-6 md:py-7 rounded-3xl font-black text-xl md:text-2xl shadow-2xl shadow-brand/40 hover:scale-105 active:scale-95 transition-all inline-flex items-center justify-center gap-4 group animate-pulse-subtle"
             >
               לתיאום פגישת אבחון
               <PhoneCall size={28} className="group-hover:rotate-12 transition-transform" />
@@ -544,11 +544,11 @@ const TheProcess: React.FC = () => {
                     {step.num}
                   </div>
                 </div>
-                <div className="text-start flex-grow space-y-4">
+                <div className="text-center md:text-start flex-grow space-y-4">
                   <div className="inline-block bg-primary text-white px-6 py-2 rounded-lg font-black text-xl md:text-2xl font-heading group-hover:bg-brand transition-colors duration-500">
                     {step.title}
                   </div>
-                  <p className="text-primary/60 text-lg md:text-xl font-bold leading-relaxed text-start">
+                  <p className="text-primary/60 text-lg md:text-xl font-bold leading-relaxed text-center md:text-start">
                     {step.desc}
                   </p>
                 </div>
